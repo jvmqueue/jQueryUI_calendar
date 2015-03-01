@@ -1,0 +1,151 @@
+/* from general to specific so that we allow overrides */
+@import url(http://fonts.googleapis.com/css?family=Vesper+Libre:400,500,700);
+
+body{
+	font-family:'Vesper Libre', sans-serif;
+}
+.floatRight{
+	float:right;
+}
+.floatLeft{
+	float:left;
+}
+.center{
+	display:block;
+ 	margin:0 auto;
+ 	text-align:center;
+ }
+ .border{
+ 	border:1px solid #CCCCCC;
+ 	box-shadow:10px 10px 5px #888888;
+ }
+ .textAlignLeft{
+ 	text-align:left;
+ }
+ .textAlignMiddle{
+ 	margin:12% auto;
+ }
+ .upperCase{
+ 	text-transform:uppercase;
+ }
+ .textOutput{
+ 	color:#FFFFFF;
+ }
+ .positionRelative{
+ 	position:relative;
+ }
+ .formFieldBlock{
+ 	display:block;
+ 	margin:10px auto;
+ 	width:97%;
+ }
+.formHeading{
+	background:url(../images/module-headers.png) right -35px no-repeat;
+	color:#FFFFFF;
+	margin:0 auto 3px auto;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	border-width:0 0;
+	padding:0.2em 10px;
+	height:26px;
+	width:92%;
+}
+ .frmDefault{
+ 	width:800px;
+ 	min-width:460px;
+ }
+ .container{
+ 	font-family:"Vesper Libre", sans-serif;
+ 	width:80%;
+ 	background-color:#FFFFFF;
+ }
+ .whatDoesThisPageDo{
+ 	color:#FFFFFF;
+ 	background:#A31E1E;
+	margin:1% auto; 	
+	padding:20px 0 20px 4%;
+ 	width:90%;
+ 	clear:both;
+ }
+ /* ***** Begin jQuery UI tweaks ***** */
+ .widgetDefaultMargin{
+ 	margin:50px 0 0 0;
+ }
+ .ui-widget-header{
+ 	background:#8B1313;
+ }
+ .ui-datepicker-header.ui-widget-header{ /* calendar top-most header */
+ 	background:url(../images/module-headers.png) -24px -107px no-repeat;
+ }
+.hasDatepicker{ /* button having day-picker attached */
+	background:url(../images/module-headers.png) -24px -46px no-repeat;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+.hasDatepicker:hover{ /* button having day-picker attached */
+	background-position-y:-4px;
+}
+
+.ui-widget-content{
+	background:#C17575;	
+}
+.ui-widget-content.ui-datepicker{
+	background:#4575B3;	
+}
+.ui-widget-content .ui-state-default{
+	background:url(../images/module-headers.png) -24px -47px no-repeat;
+	cursor:pointer;
+}
+.ui-widget-content .ui-state-default:hover{
+	background:url(../images/module-headers.png) -24px -7px no-repeat;
+}
+.ui-widget-content .ui-state-default.ui-state-highlight{
+	background:url(../images/module-headers.png) -24px -4px no-repeat;
+}
+.ui-datepicker-calendar .ui-state-default {
+	background:url(../images/module-headers.png) -24px -9px no-repeat;
+	color:#FFFFFF;
+}
+.ui-datepicker-calendar .ui-state-default.ui-state-active {
+	background:url(../images/module-headers.png) -24px -107px no-repeat;
+}
+
+
+.widgetContainer{
+	margin:0% 3%;
+	width:94%;
+	height:100px;
+	background-color:#CCCCCC;
+	clear:both;
+}
+.progressCol0{
+	background-color:#999999;
+	margin:auto;
+	width:46%;
+	height:99%;
+}
+.progressCol1{
+	background-color:#555555;
+	margin:auto;
+	width:46%;
+	height:99%;
+}
+ 
+ /* ***** End jQuery UI tweaks ***** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

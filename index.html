@@ -1,0 +1,64 @@
+<!doctype html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+	<link rel="stylesheet" href="base/jquery-ui.min.css" />
+	<link rel="stylesheet" href="styles/main.css" />
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="styles/mainIe.css" />
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+
+	<script type="text/javascript" src="base/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="base/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/view.js"></script>
+</head>
+<body class="bkColorLightGray">
+	<div id="container" class="container center boxShadow">
+	<form id="frmMain" class="frmDefault center">
+		<fieldset class="formFieldBlock positionRelative border">
+			<h3 class="formHeading upperCase">jQuery UI</h3>
+			<legend class="bold">&#160;</legend>
+			
+			<div id="calendarContainer" class="floatLeft widgetContainer">
+				<div id="calendarCol0" class="floatLeft progressCol0">
+					<input id="date" class="widgetDefaultMargin" type="button" name="date" value="Pick Date" />		
+				</div>
+				<div id="calendarCol1" class="floatRight progressCol1"></div>				
+			</div>	
+
+			<div id="sliderContainer" class="floatLeft widgetContainer">
+				<div id="sliderCol0" class="floatLeft progressCol0">
+					<div id="divSlider" class="divSlider widgetDefaultMargin"></div>					
+				</div>
+				<div id="sliderCol1" class="floatRight progressCol1"></div>				
+			</div>
+
+			<div id="progressContainer" class="floatLeft widgetContainer">
+				<div id="progressCol0" class="floatLeft progressCol0">
+					<div id="divProgessbar" class="divProgessbar widgetDefaultMargin"></div>					
+				</div>
+				<div id="divProgressCol1" class="textAlignMiddle floatRight progressCol1"></div>				
+			</div>
+
+			<div id="genericOutput" class="whatDoesThisPageDo textAlignLeft">
+				<h3>Definition and Usage</h3>
+				<dl>
+				  <dt>Pick Date</dt>
+				  <dd>Clicking on Pick Date raises calendar</dd>
+				  <dd>Selecting a calendar date populates right column</dd>
+
+				  <dt>Slider</dt>
+				  <dd>Sliding slider changes progress bar's display state</dd>
+
+				  <dt>Progress-bar</dt>
+				  <dd>Right column displays progress-bar's value</dd>				  
+
+				</dl>
+			</div>	
+		</fieldset>
+	</form>
+
+	</div>	
+</body>
+</html>
