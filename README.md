@@ -1,6 +1,6 @@
 <h1>jQuery UI Example</h1>
 <p>Showing interactivity between calendar, slider, and progression</p>
-
+<!-- -- >
 <p><a href="http://jvmqueue.com//smallHtmlComponents/jQueryUI/calendar/site/">Live URL</a></p>
 
 
