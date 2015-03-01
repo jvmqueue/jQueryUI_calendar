@@ -27,7 +27,7 @@
 </ul>
 <h4>Fundemental Architecture</h4>
 <dl>
-	<h3>jQueryUI\calendar/site/</h3>
+	<h3>jQueryUI/calendar/site/</h3>
 	<dd>html resources</dd>
 	<dt>styles</dt>
 	<dd>CSS resources</dd>
