@@ -13,14 +13,37 @@ jvm.view = (function(w, d, $){
 			nodeNew.appendChild(nodeText);
 			frag.appendChild(nodeNew);
 			options.blnEmptyParent === true ? $nodeExist.empty().append(frag) : $nodeExist.append(frag);
+		},
+		bindUiComponent:function(options){
+			var $node = $(options.selector);
+			var strComponentName = options.component;
+			switch(strComponentName){
+				case 'datepicker':
+					$node.datepicker();
+					break;
+				case 'slider':
+					$node.slider( {orientation:'horizontal', min:0, max:100, value:0} );
+				case 'progressbar':
+					$node.progressbar({value:0});
+				default:
+					/* do nothing */
+			}
 		}
-	};
+	}; // End dom
 
 	var listener = {
 		getSliderVal:function(e){
 			var val = $(this).slider('value');
 			// change progress bar to reflect slider position
-			$('#' + e.data.sendMessageNodeId).progressbar('value', val);
+			$('#' + e.data.sendMessageNodeId).progressbar('value', val); // set UI Progressbar position
+			$('.ui-slider-handle', '#divSlider').removeClass('zero between hundred'); // reset
+			if(val === 0){
+				$('.ui-slider-handle', '#divSlider').addClass('zero');
+			}else if( (val > 0)  && (val < 100) ){
+				$('.ui-slider-handle', '#divSlider').addClass('between');
+			}else if(val === 100){
+				$('.ui-slider-handle', '#divSlider').addClass('hundred');
+			}
 		},
 		onChangeProgressbar:function(e){
 			var val = $(this).progressbar('value') + '%';
@@ -42,15 +65,11 @@ jvm.view = (function(w, d, $){
 		}
 	};
 
-	var main = function(){
-		var $nodeDayPicker = $('#date').datepicker();
-		$('#divSlider').slider({
-			orientation:'horizontal',
-			min:0,
-			max:100,
-			value:0
-		});
-		$('#divProgessbar').progressbar({value:0}).addClass('blueProgress');
+	var main = function(){		
+		dom.bindUiComponent({selector:'#date', component:'datepicker'});
+		dom.bindUiComponent({selector:'#divSlider', component:'slider'});
+		dom.bindUiComponent({selector:'#divProgessbar', component:'progressbar'});
+
 		listener.set({$node:$('#divSlider'), event:'slidechange', data:{sendMessageNodeId:('divProgessbar')}, listener:listener.getSliderVal});
 		listener.set({$node:$('#divProgessbar'), event:'progressbarchange', data:{sendMessageNodeId:('divProgressCol1')}, listener:listener.onChangeProgressbar});
 		listener.set({$node:$('#date'), event:'change', data:{sendMessageNodeId:('calendarCol1')}, listener:listener.onChangeCalendar});
