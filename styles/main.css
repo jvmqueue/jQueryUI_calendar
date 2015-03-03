@@ -68,8 +68,30 @@ body{
  	clear:both;
  }
  /* ***** Begin jQuery UI tweaks ***** */
+ #divSlider .ui-slider-handle{
+ 	background:#4575B3 url(../images/spriteSliderL.png) -3px -41px no-repeat;
+ 	padding:0 3px;
+ 	border-radius:5px;
+ 	border-width:0;
+ }
+ #divSlider .ui-slider-handle.ui-state-hover{
+	background-position-x:-36px;
+ }
+ #divSlider .ui-slider-handle.zero{
+ 	background-position-y:-41px;
+ }
+ #divSlider .ui-slider-handle.between{
+ 	background-position-y:-20px;
+ }
+ #divSlider .ui-slider-handle.hundred{
+ 	background-position-y:1px;
+ }
  .widgetDefaultMargin{
  	margin:50px 0 0 0;
+ }
+ .ui-widget-content.widgetDefaultMargin{
+ 	margin:50px 0 0 0;
+ 	overflow:visible;
  }
  .ui-widget-header{
  	background:#8B1313;
@@ -88,6 +110,7 @@ body{
 
 .ui-widget-content{
 	background:#C17575;	
+	margin:0 auto;
 }
 .ui-widget-content.ui-datepicker{
 	background:#4575B3;	
