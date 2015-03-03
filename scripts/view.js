@@ -23,8 +23,10 @@ jvm.view = (function(w, d, $){
 					break;
 				case 'slider':
 					$node.slider( {orientation:'horizontal', min:0, max:100, value:0} );
+					break;
 				case 'progressbar':
 					$node.progressbar({value:0});
+					break;
 				default:
 					/* do nothing */
 			}
