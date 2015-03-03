@@ -60,7 +60,8 @@ jvm.view = (function(w, d, $){
 		},
 		onButtonDateClick:function(e){
 			var $node = $('#' + e.data.sendMessageNodeId);			
-			$node.css('z-index', '33'); // raise calendar so that other UI controls do not show through			
+			$node.css('zIndex', ''); // remove jQuery UI default value
+			$node.addClass('jsZindex'); // raise calendar so that other UI controls do not show through			
 		},
 		set:function(options){ // generic listener binding
 			options.$node.on(options.event, options.data, options.listener);
