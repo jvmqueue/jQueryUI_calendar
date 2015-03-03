@@ -14,6 +14,7 @@
 	<li>Object oriented JavaScript</li>
 	<li>jQuery</li>
 	<li>CSS3</li>	
+	<li>Sprites</li>	
 	<li>Hash Maps</li>
 	<li>Grunt</li>
 </ul>
