@@ -68,6 +68,9 @@ body{
  	clear:both;
  }
  /* ***** Begin jQuery UI tweaks ***** */
+ .jsZindex{
+ 	z-index:33;
+ }
  #divSlider .ui-slider-handle{
  	background:#4575B3 url(../images/spriteSliderL.png) -3px -41px no-repeat;
  	padding:0 3px;
