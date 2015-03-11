@@ -1,5 +1,5 @@
 /* from general to specific so that we allow overrides */
-@import url(http://fonts.googleapis.com/css?family=Vesper+Libre:400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Vesper:Sans-Serif);
 
 body{
 	font-family:'Vesper Libre', sans-serif;
@@ -39,8 +39,12 @@ body{
  	margin:10px auto;
  	width:97%;
  }
+ .backgroundImageDefault, .ui-widget-content .ui-state-default{
+ 	background:url(../images/module-headers.png);
+ }
 .formHeading{
-	background:url(../images/module-headers.png) right -35px no-repeat;
+	background-position-x:100%;
+	background-position-y:-35px;
 	color:#FFFFFF;
 	margin:0 auto 3px auto;
 	border-top-right-radius:10px;
@@ -55,7 +59,6 @@ body{
  	min-width:460px;
  }
  .container{
- 	font-family:"Vesper Libre", sans-serif;
  	width:80%;
  	background-color:#FFFFFF;
  }
@@ -67,78 +70,93 @@ body{
  	width:90%;
  	clear:both;
  }
+ .caption{
+ 	color:#FFFFFF;
+ 	background-position-x:-24px;
+ 	background-position-y:-46px;
+ 	text-align:left;
+ 	margin:10px 10px 10px 0;
+ 	padding:1px 0 0 3%;
+ 	width:97%;
+ }
  /* ***** Begin jQuery UI tweaks ***** */
  .jsZindex{
  	z-index:33;
  }
- #divSlider .ui-slider-handle{
- 	background:#4575B3 url(../images/spriteSliderL.png) -3px -41px no-repeat;
+ .divSlider .ui-slider-handle.ui-state-default{
+ 	background-image:url(../images/spriteSliderL.png);
+ 	background-position-x:-3px;
+ 	background-position-y:-41px;
+ 	background-repeat:no-repeat;
  	padding:0 3px;
  	border-radius:5px;
- 	border-width:0;
+ 	border-width:0;	
  }
- #divSlider .ui-slider-handle.ui-state-hover{
-	background-position-x:-36px;
- }
- #divSlider .ui-slider-handle.zero{
+ .ui-slider-handle.ui-state-default, .divSlider .ui-slider-handle.zero{ /* JS class injection must repeat background position */
  	background-position-y:-41px;
  }
- #divSlider .ui-slider-handle.between{
+  .ui-slider-handle.ui-state-default:hover, .divSlider .ui-slider-handle.zero:hover{ /* JS class injection therefore must define background-position-y again */
+ 	background-position-y:-41px;	
+ 	background-position-x:-35px;
+ }
+ 
+ .divSlider .ui-slider-handle.between{ /* JS class injection */
  	background-position-y:-20px;
  }
- #divSlider .ui-slider-handle.hundred{
+ .divSlider .ui-slider-handle.hundred{ /* JS class injection */
  	background-position-y:1px;
  }
+.divSlider .ui-slider-handle.hundred:hover{ /* JS class injection */
+ 	background-position-x:-35px;
+ }
  .widgetDefaultMargin{
- 	margin:50px 0 0 0;
+ 	margin:12px 0 0 0;
  }
  .ui-widget-content.widgetDefaultMargin{
- 	margin:50px 0 0 0;
+ 	margin:12px 0 0 0;
  	overflow:visible;
  }
  .ui-widget-header{
  	background:#8B1313;
  }
  .ui-datepicker-header.ui-widget-header{ /* calendar top-most header */
- 	background:url(../images/module-headers.png) -24px -107px no-repeat;
+	background-position-x:-24;
+	background-position-y:-107; 	
  }
 .hasDatepicker{ /* button having day-picker attached */
-	background:url(../images/module-headers.png) -24px -46px no-repeat;
+	background-position-x:-24px;
+	background-position-y:-46px;	
 	color:#FFFFFF;
 	cursor:pointer;
 }
 .hasDatepicker:hover{ /* button having day-picker attached */
 	background-position-y:-4px;
 }
-
 .ui-widget-content{
 	background:#C17575;	
 	margin:0 auto;
 }
-.ui-widget-content.ui-datepicker{
+.ui-widget-content.ui-datepicker{ /* calendar background  */
 	background:#4575B3;	
 }
+.ui-widget-content.ui-datepicker .ui-state-hover{ /* calendar day mouse over  */
+	background-position-y:-45px;
+}
 .ui-widget-content .ui-state-default{
-	background:url(../images/module-headers.png) -24px -47px no-repeat;
+	background-position-x:-24px;
+	background-position-y:-47px;
 	cursor:pointer;
 }
-.ui-widget-content .ui-state-default:hover{
-	background:url(../images/module-headers.png) -24px -7px no-repeat;
-}
-.ui-widget-content .ui-state-default.ui-state-highlight{
-	background:url(../images/module-headers.png) -24px -4px no-repeat;
-}
-.ui-datepicker-calendar .ui-state-default {
-	background:url(../images/module-headers.png) -24px -9px no-repeat;
+.ui-datepicker-calendar .ui-state-default{
+	background-position-x:-24px;
+	background-position-y:-9px;
 	color:#FFFFFF;
 }
 .ui-datepicker-calendar .ui-state-default.ui-state-active {
-	background:url(../images/module-headers.png) -24px -107px no-repeat;
+	background-position-y:-107px;
 }
-
-
 .widgetContainer{
-	margin:0% 3%;
+	margin:0 3%;
 	width:94%;
 	height:100px;
 	background-color:#CCCCCC;
