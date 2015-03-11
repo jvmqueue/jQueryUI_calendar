@@ -1,11 +1,4 @@
-.fieldInfo.required:before{
- 	font-size:90%;
- 	font-weight:bold;
- }
- .required:before{
- 	
- }
-  .defaultLabel{
+ .defaultLabel{
   	letter-spacing:0.2em;
  	font-size:75%;
  	font-weight:bold;
