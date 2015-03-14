@@ -12,7 +12,6 @@
 	<li>jQuery</li>
 	<li>jQuery UI</li>
 	<li>Object oriented JavaScript</li>
-	<li>jQuery</li>
 	<li>CSS3</li>	
 	<li>Sprites</li>	
 	<li>Hash Maps</li>
@@ -27,6 +26,14 @@
 	<li>DRY, avoiding code repetition</li>
 	<li>Grunt for CSS lint, JS Lint, and compression</li>
 </ul>
+
+<h3>Challenges</h3>
+<ul>
+	<li>Ensuring CSS selectors are synchronized with JS DOM manipulation</li>
+	<li>Locating classes injected by jQuery UI. Then, overriding them in CSS</li>
+	<li>Crossing Browsers... IE and Firefox must have background-position x value y value</li>
+	<li>IE must have background-image CSS property</li>
+	<li>Because of crossing browsers, it is difficult to keep CSS DRY</li>
 </ul>
 <h4>Fundemental Architecture</h4>
 <dl>
