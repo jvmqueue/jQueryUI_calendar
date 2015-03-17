@@ -41,7 +41,6 @@ body{
  	width:97%;
  }
  .backgroundImageDefault, .ui-widget-content .ui-state-default{
- 	background-image:url(../images/module-headers.png);
  	background:url(../images/module-headers.png) repeat scroll -11px -38px rgba(0, 0, 0, 0);
  }
 .formHeading{
@@ -85,7 +84,6 @@ body{
  }
  .divSlider .ui-slider-handle.ui-state-default{
  	outline:none;
- 	background-image:url(../images/spriteSliderM.png);
  	background-position:6px 2px;
  	background-color:#A31E1E;
  	background:url(../images/spriteSliderM.png) repeat scroll 6px 2px rgba(139, 19, 19, 1.0);
