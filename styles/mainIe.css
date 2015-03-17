@@ -3,3 +3,9 @@
  	font-size:75%;
  	font-weight:bold;
  }
+  .backgroundImageDefault, .ui-widget-content .ui-state-default{
+ 	background-image:url(../images/module-headers.png);
+ }
+  .divSlider .ui-slider-handle.ui-state-default{
+ 	background-image:url(../images/spriteSliderM.png);
+ }
