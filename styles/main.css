@@ -4,6 +4,7 @@
 body{
 	font-family:'Vesper Libre', sans-serif;
 }
+
 .floatRight{
 	float:right;
 }
@@ -83,6 +84,7 @@ body{
  	z-index:33;
  }
  .divSlider .ui-slider-handle.ui-state-default{
+ 	outline:none;
  	background-image:url(../images/spriteSliderM.png);
  	background-position:6px 2px;
  	background-color:#A31E1E;
